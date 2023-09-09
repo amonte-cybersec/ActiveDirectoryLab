@@ -1,86 +1,80 @@
-**1. Download VirtualBox:**
+<h2>Section 1: Setup Virtual Environment</h2> 
+
+Download VirtualBox:
 
 - Go to the VirtualBox website (https://www.virtualbox.org/) and download the VirtualBox software for your operating system.
-- Install VirtualBox on your host machine.
+  - Install VirtualBox on your host machine.
+- Download Windows 10:
+  - Obtain a legal copy of the Windows 10 ISO file from the official Microsoft website.
 
-**2. Download Windows 10:**
+<h2>Section 2: Create and Configure Virtual Machine</h2> 
 
-- Obtain a legal copy of the Windows 10 ISO file from the official Microsoft website.
+- Create Virtual Machine:
+  - Open VirtualBox and create a new virtual machine (VM).
+  - Configure the VM with appropriate settings, including allocating CPU, RAM, and storage.
 
-**3. Create Virtual Machine:**
+- Insert Guest Add CD Image:
+  - Once Windows 10 is installed on the VM, insert the VirtualBox Guest Additions CD image to enhance VM performance and features.
 
-- Open VirtualBox and create a new virtual machine (VM).
-- Configure the VM with appropriate settings, including allocating CPU, RAM, and storage.
+- Set IP Address:
+  - Configure the network settings of your VM, including setting a static or dynamic IP address.
 
-**4. Insert Guest Add CD Image:
-**
-- Once Windows 10 is installed on the VM, insert the VirtualBox Guest Additions CD image to enhance VM performance and features.
+- Rename PC:
+  - Change the computer name of the Windows 10 VM as needed.
 
-**5. Set IP Address:**
+<h2>Section 3: Active Directory Setup</h2> 
 
-- Configure the network settings of your VM, including setting a static or dynamic IP address.
+- Install Active Directory Domain Services:
+  - Install the Active Directory Domain Services role on the Windows 10 VM.
 
-**6. Rename PC:**
+- Post Deployment Configuration:
+  - Complete the necessary post-installation configuration for Active Directory.
 
-- Change the computer name of the Windows 10 VM as needed.
+- Create Own Dedicated Domain Admin Account:
+  - Create a domain admin account for managing Active Directory.
 
-**7. Install Active Directory Domain Services:**
+<h2>Section 4: Organize Active Directory</h2> 
 
-- Install the Active Directory Domain Services role on the Windows 10 VM.
+- Create an Organizational Unit (OU):
+  - Organize your Active Directory structure by creating an OU.
 
-**8. Post Deployment Configuration:**
+- Create a New User:
+  - Create a new user account within the OU.
 
-- Complete the necessary post-installation configuration for Active Directory.
+- Make a Domain Admin:
+  - Assign appropriate permissions to the user to make them a domain admin.
 
-**9. Create Own Dedicated Domain Admin Account:**
 
-- Create a domain admin account for managing Active Directory.
+<h2>Section 5: Network Configuration</h2> 
 
-**10. Create an Organizational Unit (OU):**
+- Routing and Remote Access:
+  - Configure Routing and Remote Access as needed for remote connections.
 
-- Organize your Active Directory structure by creating an OU.
+- Install NAT (Network Address Translation):
+  - Set up NAT for routing internal network traffic.
 
-**11. Create a New User:**
+- Setup a DHCP Server on Domain:
+  - Install and configure the DHCP server role on the domain controller.
 
-- Create a new user account within the OU.
+- DHCP Lease Duration:
+  - Configure DHCP lease duration settings.
 
-**12. Make a Domain Admin:**
+- Configure DHCP Options:
+  - Define DHCP options such as DNS servers, gateway, etc.
 
-- Assign appropriate permissions to the user to make them a domain admin.
+- Add an IP Address for Router:
+  - Specify the IP address of your router as a DHCP option.
 
-**13. Routing and Remote Access:**
+<h2>Section 6: Automation and Management</h2> 
 
-- Configure Routing and Remote Access as needed for remote connections.
+- Source Code for User PowerShell Script:
+  - If you need to automate user-related tasks, you can create PowerShell scripts to perform these actions (Code is listed on this repository). 
 
-**14. Install NAT (Network Address Translation):**
+- Active Directory Users and Computers:
+  - Use the Active Directory Users and Computers console to manage user accounts and other AD objects.
 
-- Set up NAT for routing internal network traffic.
+<h2>Conclusion</h2> 
 
-**15. Setup a DHCP Server on Domain:**
+Engaging in this project significantly enhances my capabilities as a security analyst. It provides hands-on experience in setting up and configuring critical security components, fostering a keen sense of network security, and honing scripting and automation abilities. Moreover, the project's holistic approach combines technical skills with an understanding of access control and user management, transforming me into a more capable and confident security analyst, ready to protect against emerging threats in today's digital landscape.
 
-Install and configure the DHCP server role on the domain controller.
 
-**16. DHCP Lease Duration:**
-
-- Configure DHCP lease duration settings.
-
-**17. Configure DHCP Options:**
-
-- Define DHCP options such as DNS servers, gateway, etc.
-
-**18. Add an IP Address for Router:**
-
-- Specify the IP address of your router as a DHCP option.
-
-**19. Source Code for User PowerShell Script:**
-
-- If you need to automate user-related tasks, you can create PowerShell scripts to perform these actions.
-
-**20. Active Directory Users and Computers:**
-
-- Use the Active Directory Users and Computers console to manage user accounts and other AD objects.
-
-**Conclusion:**
-
-Completing this cybersecurity project has equipped me with invaluable hands-on technical skills, a profound understanding of network infrastructure, and expertise in configuring and securing Active Directory environments. It has also honed my scripting and automation abilities, deepened my security awareness, and strengthened my troubleshooting skills. This experience reinforces the importance of critical thinking, risk assessment, and adherence to cybersecurity best practices, all of which are essential for a successful career as a security analyst.
-  
