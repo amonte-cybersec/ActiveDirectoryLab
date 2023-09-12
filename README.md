@@ -1,3 +1,7 @@
+<h2>Description</h2> 
+
+This project entails the comprehensive setup of an Active Directory environment and network infrastructure. Beginning with the installation of VirtualBox and Windows 10 on a virtual machine, it proceeds to configure the VM, set up network settings, and optimize performance. The Active Directory setup involves installing Domain Services, post-deployment configurations, and creating a dedicated domain admin account. Organizing Active Directory involves structuring organizational units, creating user accounts, and granting domain admin privileges. The network configuration section covers routing, NAT setup, DHCP server installation, lease duration, DHCP options, and specifying the router's IP address. The project also delves into automation with PowerShell scripts for user-related tasks and management via the Active Directory Users and Computers console, providing a comprehensive guide for establishing and managing an Active Directory environment.
+
 <h2>Section 1: Setup Virtual Environment</h2> 
 
 Download VirtualBox:
